@@ -6,7 +6,7 @@ accelerometer_random_walk: 4.33e-04
 gyroscope_noise_density: 8.7222e-4
 gyroscope_random_walk: 2.66e-05
 
-rostopic: /xsens/data
+rostopic: /xsens/imu
 update_rate: 100.0
 
 #random walk values are from Kalibr site (some dummy data)

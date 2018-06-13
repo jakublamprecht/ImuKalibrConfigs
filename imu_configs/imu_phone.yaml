@@ -1,4 +1,4 @@
-rostopic: /imu 
+rostopic: /phone/imu
 update_rate: 200.0 #Hz
 
 accelerometer_noise_density: 2.4525e-3 #continous
