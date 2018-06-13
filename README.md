@@ -22,8 +22,20 @@ In this repo we included configuration files for Econtara camera, checkerboard c
 
 ## How to run
 
+* For one IMU:
+
+* For multiple IMUs:
+
 ```bash
-kalibr_calibrate_imu_camera --target checkerboard.yaml --cam cam_econtara.yaml --imu imu_xsens.yaml imu_microstrain.yaml imu_adis.yaml imu_lowcost.yaml --bag ${someNameOfBag}.bag
+kalibr_calibrate_imu_camera --cam cam_econtara.yaml --target checkerboard.yaml --imu imu_configs/imu_xsens.yaml imu_configs/imu_microstrain.yaml imu_configs/imu_adis.yaml imu_configs/imu_lowcost.yaml --imu-models --bag ${someNameOfBag}.bag
+```
+
+## Issues
+
+For multiple IMUs calibration it might be neccessary to add `calibrated` keyword for each IMU after `--imu-models`:
+
+```bash
+kalibr_calibrate_imu_camera --cam cam_econtara.yaml --target checkerboard.yaml --imu imu_configs/imu_xsens.yaml imu_configs/imu_microstrain.yaml imu_configs/imu_adis.yaml imu_configs/imu_lowcost.yaml --imu-models calibrated calibrated calibrated calibrated--bag ${someNameOfBag}.bag
 ```
 
 ## Results
