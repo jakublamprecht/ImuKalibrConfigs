@@ -3,7 +3,7 @@ cam0:
   intrinsics: [724.1721047676475, 723.2015191636134, 319.4993538860038, 245.8102581146257]
   distortion_model: radtan
   distortion_coeffs: [0.07201126043999169, -0.06659388056309759, -0.0014204738858687126, -0.0008845577162990703]
-  rostopic: /camera/lift/image_raw
+  rostopic: /camera/left/image_raw
   resolution: [640, 480]
 
 # Camera calibration and distortion parameters (OpenCV)
