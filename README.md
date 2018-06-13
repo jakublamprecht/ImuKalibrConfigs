@@ -2,12 +2,13 @@
 
 ## Overview
 
-In this repo we included configuration files for Econtara camera, Checkerboard calibration reference and following IMUs:
+In this repo we included configuration files for Econtara camera, checkerboard calibration reference target and the following IMUs:
 
 * XSens 
 * Microstrain 3DM-GX4-25
 * ADIS
-* Some low cost
+* Some low cost IMU
+* Phone IMU
 
 ## Data used in YAML files
 
@@ -17,6 +18,7 @@ In this repo we included configuration files for Econtara camera, Checkerboard c
 * For Microstrain we used following [specification](http://www.microstrain.com/inertial/3dm-gx4-25)
 * For ADIS we used file provided at [Kalibr's github site](https://github.com/ethz-asl/kalibr/wiki/downloads)
 * For Low cost imu we used exactly the same data as in ADIS YAML file
+* For Phone IMU we used data provided at this [site](https://www.invensense.com/wp-content/uploads/2015/03/DS-000081-v1.01.pdf) random_walk values are taken from configuration file for ADIS
 
 ## How to run
 
